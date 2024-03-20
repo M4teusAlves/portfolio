@@ -3,7 +3,7 @@ import Dino from "../assets/dinossauro.gif"
 export function Main(){
     return(
         <div className="flex w-full justify-center items-center h-screen">
-            <section className="flex w-[80%] flex-col items-start md:w-[40%]">
+            <section className="flex w-[70%] flex-col items-start lg:w-[40%]">
                 <p className="text-[#64ffda] lg:text-xl mb:text-lg">Olá, eu sou</p>
                 <h1 className="lg:text-6xl mt-4 mb:text-2xl">Mateus Alves</h1>
                 <p className="mt-10 lg:text-base text-sm"> Sou um estudante de Análise e Desenvolvimento de Sistemas, 
