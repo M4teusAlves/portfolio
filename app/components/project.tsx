@@ -1,3 +1,5 @@
+import Best from "../assets/bestiario.png"
+import Dino from "../assets/dinossauro.gif"
 
 interface Props{
     image:string;
@@ -6,10 +8,9 @@ interface Props{
 
 export function Project(){
     return(
-        <li className="w-10 flex flex-col">
-
+        <>
             
-            
-        </li>
+        </>
+        
     )
 }

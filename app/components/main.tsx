@@ -11,6 +11,8 @@ export function Main(){
                 Com uma sólida compreensão dos fundamentos da programação e interesse contínuo nas últimas tendências tecnológicas, 
                 estou sempre buscando aprimorar minhas habilidades.
                 </p>
+                <button className="text-[#64ffda] mt-7 border-2 transition-shadow border-[#64ffda] rounded-md p-4 hover:shadow-[#64ffda] hover:shadow-lg lg:text-base">Download CV</button>
+                <div className="flex"></div>
             </section>
             <img src={Dino.src} className="w-[30%] ml-10 hidden lg:block"/>
         </div>

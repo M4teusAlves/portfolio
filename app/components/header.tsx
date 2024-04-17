@@ -15,16 +15,18 @@ export function Header(){
                     <li><a href="#" className="hover:text-[#64ffda] flex m-2"><p>Sobre mim</p></a></li>
                     <li><a href="#experience" className="hover:text-[#64ffda] flex m-2"><p>Experiências</p></a></li>
                     <li><a href="#projects" className="hover:text-[#64ffda] flex m-2"><p>Projetos</p></a></li>
+                    <li><a href="" className="hover:text-[#64ffda] flex m-2"><p>Habilidades</p></a></li>
                     <li><a href="#" className="hover:text-[#64ffda] flex m-2"><p>Contato</p></a></li>
                 </ul>
                 <div className="flex flex-col items-end transition-transform duration-1000 lg:hidden">
-                    <div  className="" onClick={()=>setIsOpen(!isOpen)} >{isOpen ? <X/> : <Menu/>}</div>
+                    <div onClick={()=>setIsOpen(!isOpen)} >{isOpen ? <X/> : <Menu/>}</div>
 
                     {isOpen &&(
                         <ul className="flex flex-col text-base items-end lg:hidden">
                             <li><a href="#" className="hover:text-[#64ffda] flex m-2"><p>Sobre mim</p></a></li>
                             <li><a href="#experience" className="hover:text-[#64ffda] flex m-2"><p>Experiências</p></a></li>
-                            <li><a href="#" className="hover:text-[#64ffda] flex m-2"><p>Projetos</p></a></li>
+                            <li><a href="#projects" className="hover:text-[#64ffda] flex m-2"><p>Projetos</p></a></li>
+                            <li><a href="" className="hover:text-[#64ffda] flex m-2"><p>Habilidades</p></a></li>
                             <li><a href="#" className="hover:text-[#64ffda] flex m-2"><p>Contato</p></a></li>
                         </ul>
                     )}
