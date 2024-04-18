@@ -44,7 +44,7 @@ export function Experience(){
                 <article className=" w-[70%] flex flex-col justify-start gap-5 p-7 border-l-2 border-[#64ffda] border-solid h-[80%]">
                     <p className="w-full flex justify-start text-sm text-[#64ffda] lg:text-base lg:justify-end">{select.date}</p>
                     <p className="w-full font-extrabold text-lg lg:text-6xl text-[#bee9df]">{select.title}</p>
-                    <p className="w-full text-justify w-[70%] text-base lg:text-lg">{select.content}</p>
+                    <p className="w-full text-justify w-[70%] text-sm lg:text-lg">{select.content}</p>
                 </article>
             </div>
         </section>

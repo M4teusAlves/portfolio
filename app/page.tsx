@@ -7,8 +7,7 @@ import { Main } from "./components/main";
 import { Experience } from "./components/expience";
 import { useState } from "react";
 import { PopUp } from "./components/popup";
-import { Project } from "./components/project";
-import { Projects } from "./components/projects";
+import { Projects } from './components/projects';
 
 export default function Home() {
 
