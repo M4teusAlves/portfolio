@@ -8,14 +8,25 @@ type Props = {
 export function Email(
     props:Props
 ){
+    const [copied, setCopied] = useState(false);
 
-    
-
-    function copy(){
-        navigator.clipboard.writeText('mateusasilvacontato@gmail.com')
-        props.onShow()
-
+    function copy() {
+        navigator.clipboard.writeText('mateusasilvacontato@gmail.com');
+        props.onShow();
+        setCopied(true);
     }
+
+    useEffect(() => {
+        if (copied) {
+            const timer = setTimeout(() => {
+                props.onShow();
+                setCopied(false);
+            }, 2000);
+
+            // Cleanup the timer
+            return () => clearTimeout(timer);
+        }
+    }, [copied, props]);
 
     return(
             <div className="hidden fixed flex-col items-center right-0 bottom-0 max-w-20 lg:flex">

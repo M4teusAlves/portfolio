@@ -14,11 +14,12 @@ type Props = {
 
 export function Projects(){
     return(
-        <section className="min-h-screen w-full p-4 flex flex-col items-center justify-center" id='projects'>
-            <h2 className="text-lg text-[#64ffda] mb-3">Projetos</h2>
-            <ul className="w-[80%]">
+        <section className="min-h-screen w-full p-4 pt-20 flex flex-col items-center" id="projects">
+            <h2 className="text-xl text-[#64ffda] mb-3">Projetos</h2>
+            <ul className="w-[90%] flex flex-wrap justify-center lg:justify-start lg:ml-32 lg:w-[80%] gap-3">
                 {projects.map((project:Props)=>(
-                    <Project 
+                    <Project
+                        key={project.title}
                         image={project.image}
                         title={project.title}
                         description={project.description}

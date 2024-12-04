@@ -17,7 +17,7 @@ const config: Config = {
         'mb': '300px',
       },
       animation:{
-        'pop-up': 'popup 1s linear'
+        'pop-up': 'popup 2s linear'
       },
     },
   },

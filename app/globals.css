@@ -30,13 +30,16 @@ body{
     opacity: 0;
   }
   25%{
-    opacity: 0.2;
-  }
-  50%{
     opacity: 0.5;
   }
-  75%{
+  50%{
     opacity: 1;
+  }
+  75%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 0;
   }
 
 }
